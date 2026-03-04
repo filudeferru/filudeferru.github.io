@@ -1,53 +1,94 @@
 
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Il mio sito</title>
+    <title>Le mie opere</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background-color: #111;
             color: white;
-            text-align: center;
         }
 
-        .container {
-            padding: 100px 20px;
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: #000;
         }
 
         h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
+            margin: 0;
+            font-size: 2.5em;
         }
 
-        p {
-            font-size: 1.2em;
-            margin-bottom: 30px;
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
         }
 
-        .btn {
-            display: inline-block;
-            padding: 12px 25px;
-            background: white;
-            color: #764ba2;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: bold;
+        .card {
+            background: #1c1c1c;
+            border-radius: 10px;
+            overflow: hidden;
             transition: 0.3s;
         }
 
-        .btn:hover {
-            background: #ddd;
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .card img {
+            width: 100%;
+            display: block;
+        }
+
+        .card p {
+            padding: 15px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #000;
+            font-size: 0.9em;
+            color: #aaa;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Benvenuto nel mio sito 🚀</h1>
-        <p>Creato gratuitamente con GitHub Pages</p>
-        <a href="#" class="btn">Scopri di più</a>
+
+<header>
+    <h1>Le mie opere 🎨</h1>
+</header>
+
+<section class="gallery">
+
+    <div class="card">
+        <img src="https://via.placeholder.com/600x400" alt="Opera 1">
+        <p>Titolo Opera 1</p>
     </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/600x400" alt="Opera 2">
+        <p>Titolo Opera 2</p>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/600x400" alt="Opera 3">
+        <p>Titolo Opera 3</p>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 - Il mio portfolio
+</footer>
+
 </body>
 </html>
