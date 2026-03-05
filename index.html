@@ -1,65 +1,81 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="it">
 
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>filudeferru</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
 <style>
 
 body{
 margin:0;
-font-family:Arial;
+font-family:'Poppins',sans-serif;
 background:#111;
 color:white;
+text-align:center;
 }
 
 header{
-text-align:center;
 padding:40px;
-background:#222;
+font-size:40px;
+font-weight:700;
 }
 
-.gallery{
+.galleria{
 display:flex;
 justify-content:center;
-gap:20px;
+gap:30px;
 flex-wrap:wrap;
 padding:40px;
 }
 
 .card{
-background:#222;
-padding:10px;
-border-radius:10px;
-width:200px;
-text-align:center;
+background:#1e1e1e;
+border-radius:15px;
+width:250px;
+padding:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.5);
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.05);
 }
 
 .card img{
 width:100%;
-border-radius:8px;
+border-radius:10px;
 }
 
 .card p{
 margin-top:10px;
-font-size:14px;
+font-weight:500;
 }
 
-.about{
-text-align:center;
-padding:60px 20px;
-background:#f5f5f5;
+.sezione{
+background:white;
 color:#333;
+padding:60px 20px;
+}
+
+.sezione h2{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.sezione p{
+font-size:18px;
 }
 
 footer{
-text-align:center;
 padding:20px;
-background:#000;
 font-size:14px;
+color:#aaa;
 }
 
 </style>
@@ -68,10 +84,10 @@ font-size:14px;
 <body>
 
 <header>
-<h1>filudeferru</h1>
+filudeferru
 </header>
 
-<section class="gallery">
+<section class="galleria">
 
 <div class="card">
 <img src="opera1.jpg">
@@ -87,18 +103,42 @@ font-size:14px;
 <img src="opera3.jpg">
 <p>Opera 3</p>
 </div>
+
 </section>
 
-<section class="about">
+<section class="galleria">
+
+<div class="card">
+<img src="opera4.jpg">
+<p>Opera 4</p>
+</div>
+
+<div class="card">
+<img src="opera5.jpg">
+<p>Opera 5</p>
+</div>
+
+<div class="card">
+<img src="opera6.jpg">
+<p>Opera 6</p>
+</div>
+
+</section>
+
+<section class="sezione">
+
 <h2>Chi siamo</h2>
+
+<p>Alchimisti dello scarto</p>
+
 <p>
-Benvenuti su filudeferru. Questo sito mostra le mie opere artistiche
-e i miei progetti creativi.
+Benvenuti su filudeferru. Questo sito presenta il mio lavoro artistico e i miei progetti creativi.
 </p>
+
 </section>
 
 <footer>
-© 2026 - Il mio portfolio
+© 2026 filudeferru
 </footer>
 
 </body>
